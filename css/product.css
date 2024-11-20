@@ -1,0 +1,153 @@
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px var(--main-color);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    outline: 1px solid var(--main-color);
+  }
+
+:root{
+    --main-color: #00EEFF;
+
+}
+
+.card{
+    overflow: hidden;
+}
+.card button{
+    transform: translateY(150%);
+    transition: transform .5s;
+}
+.card:hover button{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.card {
+    margin: 15px;
+}
+
+.star-rating {
+    color: gold;
+}
+.pro-nav{
+    max-width: 83%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 15px 0px;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.card{
+    border: 1px solid var(--main-color);
+}
+.card h6{
+    color: var(--main-color);
+}
+.card button{
+    background-color: var(--main-color);
+    border: var(--main-color);
+}
+.card button:hover{
+    background-color: #e78f01;
+}
+.C-image{
+    width: 100%;
+    height: 8cm;
+    border-radius: 8px;
+    object-fit: contain;
+}
+.CH-pic{
+    width: 2cm;
+    height: 2cm;
+}
+.rate-con{
+    color: gold;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    font-size: 20px;
+}
+
+.btn-primary , .btn-secondary{
+    background-color: var(--main-color);
+    border: var(--main-color);
+}
+.btn-primary:hover , .btn-secondary:hover{
+    background-color: #e78f01;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--navbar-bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.navbar .nav-links li a:hover {
+    color: var(--primary-hover-color);
+}
+
+.navbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .user-info span {
+    font-size: 16px;
+}
+
+.navbar .user-info button {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar .user-info button:hover {
+    background-color: var(--primary-hover-color);
+}

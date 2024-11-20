@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Products</title>
+</head>
+<body>
+        <!-- Navbar -->
+        <header>
+            <div class="navbar">
+                <div class="logo">MyApp</div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="user-info">
+                    <span id="userName">Welcome, User</span>
+                    <button id="logoutBtn" onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </header>
+    <nav class="pro-nav">
+        <a>Product Store</a>
+        <div  title="Go to checkout">
+            <a  href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Products</h1>
+        <div class="row" id="product-list"></div>
+    </div>
+
+    <script src="./js/home.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">AN Ecommerce</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="user-info">
+                <span id="userName">Welcome, User</span>
+                <button id="logoutBtn" onclick="logout()">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="image/img1.png" alt="Hero Image" class="hero-img">
+            <div class="hero-text">
+                <h1>Welcome to MyApp</h1>
+                <p>Your journey starts here. Explore all the features we offer to make your experience amazing.</p>
+                <button class="get-started-btn" onclick="window.location.href='#pro-veiw'">Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5" id="pro-veiw">
+            <div class="row" id="product-list"></div>
+        </div>
+    </section>
+
+    <script src="./js/home.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
